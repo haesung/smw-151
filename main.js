@@ -185,7 +185,7 @@ const onSubmit = async function onSubmit() {
 };
 
 const iife = (async function iife() {
-  my.appId = location.pathname.substring(1); // smw-151
+  my.appId = location.pathname.split('/')[0]; // smw-151
   if (localStorage.getItem('appId') === my.appId) {
     my.attribute = JSON.parse(localStorage.getItem('attribute'));
     my.ui = JSON.parse(localStorage.getItem('ui'));

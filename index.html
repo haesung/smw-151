@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <title>CBR Service</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  /* responsive scrollable 2 panels */
+  html, body {
+    height: 100%;
+  }
+  #content {
+    height: 100vh;
+    display: flex;
+    flex: 1;
+  }
+  #left, #right {
+    overflow: auto;
+    padding: 2em;
+  }
+  #left {
+    flex: 1;
+    background-color: whitesmoke;
+  }
+  #right {
+    flex: 2;
+  }
+  @media (max-width: 767px) {
+    #content {
+      flex-direction: column;
+    }
+  }
+
+  hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: white;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  thead { color: dodgerBlue; }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) { background-color: #dddddd; }
+  a { text-decoration: none; }
+  a:link, a:visited { color: black; }
+  a:hover { color: blue; }
+
+  .button-go { /* go button decoration */
+    background-color: white;
+    color: black;
+    border: 2px solid dodgerBlue;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button-go:hover {
+    background-color: dodgerBlue;
+    color: white;
+  }
+  </style>
+</head>
+<body style="display: none">
+  <div id="content">
+    <div id="left">
+      <div id="pages">
+        <label for="action">CBR Action:</label>
+        <select id="action">
+          <option value="find">find</option>
+          <option value="test">test</option>
+        </select>
+        <hr>
+      </div>
+    </div>
+    <div id="right"></div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

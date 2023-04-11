@@ -126,7 +126,7 @@ const onSubmit = async function onSubmit() {
       query.euRegion = euCountry.map2region[query.euCountry];
     }
 
-    const cbrFindCase = 'https://mxkmtzc65xvszinevyvxc6ltay0aofsx.lambda-url.ap-northeast-2.on.aws/';
+    const cbrFindCase = 'https://ab6q65qx3onob2ns7g5smn37uy0pqjky.lambda-url.ap-northeast-2.on.aws/';
     const res = await fetch(cbrFindCase, {
       method: 'post',
       body: JSON.stringify({ query, appId: my.appId }),
@@ -198,7 +198,7 @@ const iife = (async function iife() {
       my.thing = JSON.parse(localStorage.getItem('thing'));
       my.page = localStorage.getItem('page');
     } else {
-      const cbrGetUi = 'https://mnikqj533gb7rqb4bzdlwhayfa0hkeuk.lambda-url.ap-northeast-2.on.aws/';
+      const cbrGetUi = 'https://iawlfv4oaf4ksegek6b4lsim4u0vekmi.lambda-url.ap-northeast-2.on.aws/';
       const res = await fetch(cbrGetUi, {
         method: 'post',
         body: my.appId,

@@ -2,6 +2,7 @@
  * main.js ghp
  * (C)2022 Haesung Kim, All Rights Reserved
  * ------------------------------------------------------------------
+ * v1.0.1  2023.4.11 use haesung's aws lambda function url
  * v1.0.0  2022.11.15 1st cut
  * - @1 smw specific code
  * ------------------------------------------------------------------
